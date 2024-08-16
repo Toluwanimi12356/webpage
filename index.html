@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles5.css" />
+    <script src="script2.js" defer></script>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form id="regForm">
+        <fieldset>
+            <label for="firstname">Enter Your First Name: <input id="input1" name="first-name" type="text"
+                     required /></label>
+            <label for="lastname">Enter Your Last Name: <input id="input2" name="last-name" type="text"
+                    required /></label>
+            <label for="email">Enter Your Email: <input id="input3" name="email" type="email" required /></label>
+            <label  for="phonenumber">Enter Your Phone No (optional): <input id="input4" name="phone-number" type="text" /></label>
+           
+        </fieldset>
+        <fieldset>
+            <legend>Location</legend>
+            <select id="location" name="location">
+                <option></option>
+                <option>New York, USA</option>
+                <option>Lagos, Nigeria</option>
+                <option>Manchester, UK</option>
+                <option>Melbourne, Austrailia</option>
+                <option>Paris, France</option>
+                <option>Tokyo, Japan</option>
+                <option>Dortmund, Germany</option>
+                <option>Rotterdam, Netherlands</option>
+                <option>Barcelona, Spain</option>
+                <option>Genk, Belgium</option>
+                <option>Fenerbache, Turkey</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="age">Date Of Birth: <input id="input8" name="age" type="date" /></label>
+           
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input name="radio_group" type="radio" />Male</label>
+            <input name="radio_group" type="radio" />Female</label>
+            <input name="radio_group"  type="radio" />Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Religion</legend>
+            <label for="religion"><input name="radio_group" type="radio" />Christianity</label>
+            <label for="religion"><input name="radio_group" type="radio" />Islam</label>
+        </fieldset>
+        <fieldset>
+            <legend>Select at least one or more interests</legend>
+            <label for="interests"><input name="checkbox" type="checkbox" />Movies</label>
+            <label for="interests"><input name="checkbox" type="checkbox"/>Travel</label>
+            <label for="interests"><input name="checkbox" type="checkbox" />Arts</label>
+            <label for="interests"><input name="checkbox" type="checkbox" />Artificial Intelligence</label>
+            <label for="interests"><input name="checkbox" type="checkbox" />Fashion</label>
+            <label for="interests"><input name="checkbox" type="checkbox" />Technology</label>
+            <label for="interests"> <input name="checkbox" type="checkbox" />Sports</label>
+        </fieldset>
+        <fieldset>
+            <textarea name="message" rows="10" cols="60" placeholder="Tell us about your skills..."></textarea>
+        </fieldset>
+        <input id="input9" type="submit" value="Submit" />
+        <input id="input10" type="reset" value="Reset" />
+        
+    </form>
+</body>
+
+</html>
